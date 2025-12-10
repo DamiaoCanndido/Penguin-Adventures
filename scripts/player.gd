@@ -23,6 +23,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
+	# Movement logic function
 	if direction > 0:
 		anim.flip_h = false
 	elif direction < 0:
